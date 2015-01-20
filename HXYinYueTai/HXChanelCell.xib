@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Mu8-IG-n1t" customClass="HXChanelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mu8-IG-n1t" id="7IJ-RE-VC0">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView tag="400" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WZi-x0-e6T">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Den-5m-Oqp" appends="YES" id="TEY-8y-JD6"/>
+                        </connections>
+                    </imageView>
+                    <imageView tag="401" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgM-ch-io6">
+                        <rect key="frame" x="200" y="0.0" width="120" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3BY-xc-FuW" appends="YES" id="eJl-6N-kae"/>
+                        </connections>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s3-0a-Hq7">
+                        <rect key="frame" x="0.0" y="85" width="201" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2156862745" green="0.87058823529999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPn-ff-ail">
+                        <rect key="frame" x="199" y="85" width="121" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2156862745" green="0.87058823529999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="channel_shaddow.png" translatesAutoresizingMaskIntoConstraints="NO" id="YWE-Zm-fgv">
+                        <rect key="frame" x="0.0" y="62" width="320" height="44"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYI-6Y-cmZ">
+                        <rect key="frame" x="200" y="0.0" width="28" height="28"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hc6-dP-a3P">
+                        <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellOneLeftFlag" destination="Hc6-dP-a3P" id="9Bz-5i-uA2"/>
+                <outlet property="cellOneLeftImage" destination="WZi-x0-e6T" id="hRl-4z-4Ri"/>
+                <outlet property="cellOneLeftLabel" destination="3s3-0a-Hq7" id="a8X-rB-jyx"/>
+                <outlet property="cellOneRightFlag" destination="eYI-6Y-cmZ" id="soF-q8-dUo"/>
+                <outlet property="cellOneRightImage" destination="VgM-ch-io6" id="sx4-2g-KdB"/>
+                <outlet property="cellOneRightLabel" destination="DPn-ff-ail" id="scl-Vy-t8C"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="C8c-iw-6mb" customClass="HXChanelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C8c-iw-6mb" id="Kza-VU-aPL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView tag="400" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPR-ZM-Y9i">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KDK-2O-zie" appends="YES" id="CbP-WJ-G1d"/>
+                        </connections>
+                    </imageView>
+                    <imageView tag="401" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xJb-7X-Ob1">
+                        <rect key="frame" x="106" y="0.0" width="108" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="sZm-kf-ojH" appends="YES" id="V4W-IG-QBZ"/>
+                        </connections>
+                    </imageView>
+                    <imageView tag="402" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGs-1z-5fa">
+                        <rect key="frame" x="214" y="0.0" width="106" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gZf-8o-fWP" appends="YES" id="1ep-g9-u7g"/>
+                        </connections>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="channel_shaddow.png" translatesAutoresizingMaskIntoConstraints="NO" id="vFa-wE-jDt">
+                        <rect key="frame" x="0.0" y="62" width="320" height="44"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l6-4f-3fG">
+                        <rect key="frame" x="0.0" y="85" width="106" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.21568627450980393" green="0.87058823529411766" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkg-eB-L9H">
+                        <rect key="frame" x="106" y="85" width="106" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2156862745" green="0.87058823529999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-iK-4Gh">
+                        <rect key="frame" x="214" y="85" width="106" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2156862745" green="0.87058823529999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kby-7R-BiE">
+                        <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kDp-XH-nLf">
+                        <rect key="frame" x="106" y="0.0" width="28" height="28"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OtY-LW-KtR">
+                        <rect key="frame" x="214" y="0.0" width="28" height="28"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellTwoLeftFlag" destination="kby-7R-BiE" id="N0F-E4-W3b"/>
+                <outlet property="cellTwoLeftImage" destination="uPR-ZM-Y9i" id="xi7-EM-rou"/>
+                <outlet property="cellTwoLeftLabel" destination="9l6-4f-3fG" id="zhw-sh-Lou"/>
+                <outlet property="cellTwoMiddleFlag" destination="kDp-XH-nLf" id="vin-1P-clO"/>
+                <outlet property="cellTwoMiddleImage" destination="xJb-7X-Ob1" id="NmF-y1-dND"/>
+                <outlet property="cellTwoMiddleLabel" destination="Lkg-eB-L9H" id="RCT-ZM-GH4"/>
+                <outlet property="cellTwoRightFlag" destination="OtY-LW-KtR" id="VKg-5m-FSr"/>
+                <outlet property="cellTwoRightImage" destination="bGs-1z-5fa" id="JBj-dj-w3x"/>
+                <outlet property="cellTwoRightLabel" destination="RS9-iK-4Gh" id="aEM-Dz-exs"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="86" id="A7F-Pa-8J8" customClass="HXChanelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A7F-Pa-8J8" id="T6n-5f-HKN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView tag="400" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLj-C9-bGh">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hI4-y9-9vT" appends="YES" id="DHH-jo-5ca"/>
+                        </connections>
+                    </imageView>
+                    <imageView tag="401" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j97-vl-QtH">
+                        <rect key="frame" x="160" y="0.0" width="160" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aKE-N7-dYA" appends="YES" id="us5-nn-fe7"/>
+                        </connections>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="channel_shaddow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iem-fF-udf">
+                        <rect key="frame" x="0.0" y="62" width="320" height="44"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2F-LX-NZE">
+                        <rect key="frame" x="0.0" y="85" width="160" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2156862745" green="0.87058823529999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I54-P0-wkE">
+                        <rect key="frame" x="160" y="85" width="160" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2156862745" green="0.87058823529999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9i-nw-erF">
+                        <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLT-hM-zfj">
+                        <rect key="frame" x="160" y="0.0" width="28" height="28"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellThreeLeftFlag" destination="E9i-nw-erF" id="o1n-Zj-nCh"/>
+                <outlet property="cellThreeLeftImage" destination="JLj-C9-bGh" id="NRe-s3-aze"/>
+                <outlet property="cellThreeLeftLabel" destination="u2F-LX-NZE" id="jFN-wQ-gLb"/>
+                <outlet property="cellThreeRightFlag" destination="aLT-hM-zfj" id="bAz-L7-woO"/>
+                <outlet property="cellThreeRightImage" destination="j97-vl-QtH" id="5as-RY-cFf"/>
+                <outlet property="cellThreeRightLabel" destination="I54-P0-wkE" id="a29-l1-HPi"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="IvY-dA-ruX" customClass="HXChanelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IvY-dA-ruX" id="qNn-Bi-eEY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView tag="401" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MA-4R-O3B">
+                        <rect key="frame" x="120" y="0.0" width="200" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dJS-ta-YCK" appends="YES" id="MSQ-Re-zwk"/>
+                        </connections>
+                    </imageView>
+                    <imageView tag="400" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2g-cz-F1l">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="106"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jKl-1d-dbY" appends="YES" id="Yhb-sc-zPU"/>
+                        </connections>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="channel_shaddow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ojn-Xi-9el">
+                        <rect key="frame" x="0.0" y="62" width="320" height="44"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mz6-8L-bDt">
+                        <rect key="frame" x="120" y="85" width="201" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2156862745" green="0.87058823529999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mda-ZD-cc2">
+                        <rect key="frame" x="0.0" y="85" width="121" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2156862745" green="0.87058823529999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JgU-m4-gI5">
+                        <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hF5-S7-moo">
+                        <rect key="frame" x="120" y="0.0" width="28" height="28"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellFourLeftFlag" destination="JgU-m4-gI5" id="eUc-5h-50U"/>
+                <outlet property="cellFourLeftImage" destination="g2g-cz-F1l" id="ayU-if-I5O"/>
+                <outlet property="cellFourLeftLabel" destination="mda-ZD-cc2" id="geP-YZ-aWN"/>
+                <outlet property="cellFourRightFlag" destination="hF5-S7-moo" id="zIi-9C-km5"/>
+                <outlet property="cellFourRightImage" destination="7MA-4R-O3B" id="7gT-zS-aoa"/>
+                <outlet property="cellFourRightLabel" destination="Mz6-8L-bDt" id="aBa-Oz-AbK"/>
+            </connections>
+        </tableViewCell>
+        <tapGestureRecognizer id="Den-5m-Oqp">
+            <connections>
+                <action selector="tapImage:" destination="Mu8-IG-n1t" id="zvg-v6-NVO"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="3BY-xc-FuW">
+            <connections>
+                <action selector="tapImage:" destination="Mu8-IG-n1t" id="IYB-Q2-xga"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="KDK-2O-zie">
+            <connections>
+                <action selector="tapImage:" destination="C8c-iw-6mb" id="uyt-3g-9cg"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="sZm-kf-ojH">
+            <connections>
+                <action selector="tapImage:" destination="C8c-iw-6mb" id="oee-27-Nvo"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="gZf-8o-fWP">
+            <connections>
+                <action selector="tapImage:" destination="C8c-iw-6mb" id="7L8-oY-rsm"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="hI4-y9-9vT">
+            <connections>
+                <action selector="tapImage:" destination="A7F-Pa-8J8" id="4h6-UY-g2S"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="aKE-N7-dYA">
+            <connections>
+                <action selector="tapImage:" destination="A7F-Pa-8J8" id="NPQ-8L-3Qf"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="jKl-1d-dbY">
+            <connections>
+                <action selector="tapImage:" destination="IvY-dA-ruX" id="YXg-eG-Sgd"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="dJS-ta-YCK">
+            <connections>
+                <action selector="tapImage:" destination="IvY-dA-ruX" id="Z6V-I4-ZYb"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="channel_shaddow.png" width="106" height="44"/>
+    </resources>
+</document>

@@ -13,4 +13,30 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
 #endif
+
+// 设备信息
+#define DEVICEINFO (@"{\"aid\":\"10201024\",\"os\":\"Android\",\"ov\":\"7.0\",\"rn\":\"640*960\",\"dn\":\"Apple Iphone-4s\",\"cr\":\"46001\",\"as\":\"WIFI\",\"uid\":\"083df690358ed0c7ca179654e8010c33\",\"clid\":110033000}")
+
+// 展示导航栏
+#define SHOW_NAVIGATION_BAR (@"showNavigationBar")
+
+// 隐藏导航栏
+#define HIDE_NAVIGATION_BAR (@"hideNavigationBar")
+
+// 展示TabBar
+#define SHOW_TAB_BAR (@"showTabBar")
+
+// 隐藏TabBar
+#define HIDE_TAB_BAR (@"hideTabBar")
+
+// 导航栏高度
+#define NAVIGATION_BAR_HEIGHT (44)
+
+// 标签导航栏高度
+#define TAB_BAR_HEIGHT (49)
+
+
+
+

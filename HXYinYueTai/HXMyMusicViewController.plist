@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image_n</key>
+		<string>three_G</string>
+		<key>image_l</key>
+		<string>three_G_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>download_manage</string>
+		<key>image_l</key>
+		<string>download_manage_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>subscribe</string>
+		<key>image_l</key>
+		<string>subscribe_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>message_box</string>
+		<key>image_l</key>
+		<string>message_box_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>paly_record</string>
+		<key>image_l</key>
+		<string>paly_record_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>mv_image</string>
+		<key>image_l</key>
+		<string>mv_imae_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>music_list</string>
+		<key>image_l</key>
+		<string>music_list_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>music_ collection</string>
+		<key>image_l</key>
+		<string>music_ collection_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>my_music_fan</string>
+		<key>image_l</key>
+		<string>my_music_fan_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>live</string>
+		<key>image_l</key>
+		<string>live_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>Ring</string>
+		<key>image_l</key>
+		<string>Ring_p</string>
+	</dict>
+	<dict>
+		<key>image_n</key>
+		<string>game_center</string>
+		<key>image_l</key>
+		<string>game_center_p</string>
+	</dict>
+</array>
+</plist>

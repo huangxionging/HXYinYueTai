@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXLoginViewController">
+            <connections>
+                <outlet property="acount" destination="mW8-cb-H9m" id="1j0-ib-lxd"/>
+                <outlet property="acountTextFiled" destination="svo-tY-p1f" id="3Fj-a0-vdn"/>
+                <outlet property="password" destination="c4e-nh-FDT" id="YsO-3h-MXH"/>
+                <outlet property="passwordTextField" destination="XAQ-dQ-Jum" id="HZy-NS-C3M"/>
+                <outlet property="view" destination="Fzm-dw-lYU" id="TgA-J7-7xG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Fzm-dw-lYU">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Login_InputBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="U77-19-aZ8">
+                    <rect key="frame" x="29" y="80" width="250" height="38"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Login_InputBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="KV2-yX-9IK">
+                    <rect key="frame" x="29" y="138" width="250" height="38"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFZ-3x-l3t">
+                    <rect key="frame" x="142" y="538" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mW8-cb-H9m">
+                    <rect key="frame" x="44" y="88" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="Login_mailIcon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="Login_mailIcon_Sel.png"/>
+                    <state key="highlighted" backgroundImage="Login_mailIcon_Sel.png"/>
+                    <connections>
+                        <action selector="accountClick:" destination="-1" eventType="touchUpInside" id="T0Y-BI-mHI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4e-nh-FDT">
+                    <rect key="frame" x="44" y="146" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="Login_pwdIcon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="Login_pwdIcon_Sel.png"/>
+                    <state key="highlighted" backgroundImage="Login_pwdIcon_Sel.png"/>
+                    <connections>
+                        <action selector="passwordClick:" destination="-1" eventType="touchUpInside" id="91r-mY-at0"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svo-tY-p1f">
+                    <rect key="frame" x="74" y="84" width="191" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="dFa-W5-wux"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAQ-dQ-Jum">
+                    <rect key="frame" x="74" y="142" width="191" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="S6L-Ft-6co"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl5-E3-VNS">
+                    <rect key="frame" x="29" y="266" width="250" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="Login_LoginButton.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="Login_LoginButton_Sel.png"/>
+                    <state key="highlighted" backgroundImage="Login_LoginButton_Sel.png"/>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="sRk-d7-0I1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISv-IR-T5t">
+                    <rect key="frame" x="29" y="198" width="80" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="Login_Reg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="Login_Reg_Sel.png"/>
+                    <state key="highlighted" backgroundImage="Login_Reg_Sel.png"/>
+                    <connections>
+                        <action selector="registerAccount:" destination="-1" eventType="touchUpInside" id="hk0-Ls-SBs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncp-wZ-5fl">
+                    <rect key="frame" x="193" y="198" width="86" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="Login_forgetPwd.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="Login_forgetPwd_Sel.png"/>
+                    <state key="highlighted" backgroundImage="Login_forgetPwd_Sel.png"/>
+                    <connections>
+                        <action selector="lookPassword:" destination="-1" eventType="touchUpInside" id="RxL-fk-f9A"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qFZ-3x-l3t" firstAttribute="leading" secondItem="Fzm-dw-lYU" secondAttribute="leading" constant="142" id="0pA-1C-06n"/>
+                <constraint firstAttribute="bottom" secondItem="qFZ-3x-l3t" secondAttribute="bottom" constant="-88" id="H2X-Jo-5C8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Login_InputBack.png" width="250" height="38"/>
+        <image name="Login_LoginButton.png" width="250" height="38"/>
+        <image name="Login_LoginButton_Sel.png" width="250" height="38"/>
+        <image name="Login_Reg.png" width="80" height="22"/>
+        <image name="Login_Reg_Sel.png" width="80" height="22"/>
+        <image name="Login_forgetPwd.png" width="86" height="17"/>
+        <image name="Login_forgetPwd_Sel.png" width="86" height="17"/>
+        <image name="Login_mailIcon.png" width="22" height="22"/>
+        <image name="Login_mailIcon_Sel.png" width="22" height="22"/>
+        <image name="Login_pwdIcon.png" width="22" height="22"/>
+        <image name="Login_pwdIcon_Sel.png" width="22" height="22"/>
+    </resources>
+</document>
