@@ -1417,9 +1417,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "New-Life";
 				TargetAttributes = {
-					F2F1052E19B0E74300A46F59 = {
-						DevelopmentTeam = E6WF8D84YC;
-					};
 					F2F1054919B0E74300A46F59 = {
 						TestTargetID = F2F1052E19B0E74300A46F59;
 					};
@@ -1883,7 +1880,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1906,7 +1903,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

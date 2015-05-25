@@ -45,6 +45,8 @@
 
 @property (nonatomic, assign) BOOL isFullScreen;
 
+@property (nonatomic, assign) UIInterfaceOrientation orientation;
+
 @end
 
 @implementation HXPlayVListViewController
@@ -268,13 +270,10 @@
     _customQueue = dispatch_queue_create("myQueue",  DISPATCH_QUEUE_CONCURRENT);
     
     _manager = [AFHTTPRequestOperationManager manager];
-    
 
-    
     [self setNavigationBar];
     
     [self setVideoView];
-    
     
     [self setAnimation];
     
@@ -437,6 +436,7 @@
 #pragma mark---设置视频视图
 - (void) setVideoView
 {
+    _orientation = UIInterfaceOrientationPortrait;
     _videoView = [[HXVideoView alloc] init];
     
     [self setVideoViewFrameWith: self.interfaceOrientation];
@@ -503,14 +503,22 @@
 {
     if (interfaceOrientation == UIInterfaceOrientationPortrait)
     {
-        _videoView.frame = CGRectMake(0, 64, self.view.frame.size.width, 180);
+        if (_orientation == UIInterfaceOrientationPortrait) {
+            _videoView.frame = CGRectMake(0, 64, self.view.frame.size.width, 180);
+        }
+        else {
+            _videoView.frame = CGRectMake(0, 64, self.view.frame.size.height, 180);
+        }
+        _orientation = UIInterfaceOrientationPortrait;
     }
     else if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft)
     {
+        _orientation = UIInterfaceOrientationLandscapeLeft;
         _videoView.frame = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
     }
     else if (interfaceOrientation == UIInterfaceOrientationLandscapeRight)
     {
+        _orientation = UIInterfaceOrientationLandscapeRight;
         _videoView.frame = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
     }
     

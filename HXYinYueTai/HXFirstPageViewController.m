@@ -839,4 +839,11 @@
     _homePageScrollView.contentOffset = CGPointMake((_homePageControl.currentPage + 2) * _homePageScrollView.frame.size.width , 0);
 }
 
+- (BOOL) shouldAutorotate
+{
+    
+    return NO;
+    
+}
+
 @end

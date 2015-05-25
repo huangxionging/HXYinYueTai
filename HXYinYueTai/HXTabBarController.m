@@ -335,14 +335,9 @@
 // 是否可以旋转
 - (BOOL) shouldAutorotate
 {
-    if (_isRotate == YES)
-    {
-        return YES;
-    }
-    else
-    {
-        return NO;
-    }
+   
+    return NO;
+
 }
 
 @end
