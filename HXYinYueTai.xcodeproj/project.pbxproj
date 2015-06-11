@@ -213,6 +213,7 @@
 		F278795719D15F4B00960339 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F278795619D15F4B00960339 /* QuartzCore.framework */; };
 		F278795919D15F5700960339 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F278795819D15F5600960339 /* ImageIO.framework */; };
 		F278795B19D15F6200960339 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F278795A19D15F6200960339 /* MobileCoreServices.framework */; };
+		F2A9EFEF1B14197000E6276F /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A9EFEE1B14197000E6276F /* Images-2.xcassets */; };
 		F2ACA55419D114E0009E018B /* loadingplay.gif in Resources */ = {isa = PBXBuildFile; fileRef = F2ACA55319D114E0009E018B /* loadingplay.gif */; };
 		F2DCFC2919C6B6880015937B /* Login_phoneNext_No_Sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DCFC2619C6B6880015937B /* Login_phoneNext_No_Sel@2x.png */; };
 		F2DCFC2A19C6B6880015937B /* Login_phoneNext_Sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DCFC2719C6B6880015937B /* Login_phoneNext_Sel@2x.png */; };
@@ -569,6 +570,7 @@
 		F278795619D15F4B00960339 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F278795819D15F5600960339 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		F278795A19D15F6200960339 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F2A9EFEE1B14197000E6276F /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		F2ACA55319D114E0009E018B /* loadingplay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loadingplay.gif; sourceTree = "<group>"; };
 		F2DCFC2619C6B6880015937B /* Login_phoneNext_No_Sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login_phoneNext_No_Sel@2x.png"; sourceTree = "<group>"; };
 		F2DCFC2719C6B6880015937B /* Login_phoneNext_Sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login_phoneNext_Sel@2x.png"; sourceTree = "<group>"; };
@@ -1155,6 +1157,7 @@
 				F207348519B324EB0065A658 /* Model */,
 				F207348419B324DF0065A658 /* Views */,
 				F2F65A2A19B1BF760063147F /* View Controllers */,
+				F2A9EFEE1B14197000E6276F /* Images-2.xcassets */,
 				F2F1053919B0E74300A46F59 /* Supporting Files */,
 			);
 			path = HXYinYueTai;
@@ -1474,6 +1477,7 @@
 				F2152B2219C5B9F400196735 /* Login_weibo_Sel@2x.png in Resources */,
 				F2152B3719C67B6E00196735 /* HXPhoneRegisterViewController.xib in Resources */,
 				F20C3CC719BC7F1A00E1F659 /* search_clearHistoryButton@2x.png in Resources */,
+				F2A9EFEF1B14197000E6276F /* Images-2.xcassets in Resources */,
 				F2F65A8D19B2CEEF0063147F /* BottomBar_Icon@2x.png in Resources */,
 				F2E3D1EF19BDB45D00C682DC /* down_mv@2x.png in Resources */,
 				F20734BE19B331040065A658 /* HomePagegoBtn_sel@2x.png in Resources */,
