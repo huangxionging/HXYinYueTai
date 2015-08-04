@@ -47,6 +47,8 @@
 
 @property (nonatomic, assign) UIInterfaceOrientation orientation;
 
+@property (nonatomic, assign) BOOL isFirstCreate;
+
 @end
 
 @implementation HXPlayVListViewController
@@ -60,6 +62,7 @@
         _isModal = NO;
         _page = 0;
         _commentArray = [[NSMutableArray alloc] init];
+        _isFirstCreate = YES;
     }
     return self;
 }
@@ -513,13 +516,25 @@
     }
     else if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft)
     {
+        if (_orientation == UIInterfaceOrientationLandscapeRight) {
+            _videoView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        }
+        else {
+            _videoView.frame = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
+        }
         _orientation = UIInterfaceOrientationLandscapeLeft;
-        _videoView.frame = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
+        
     }
     else if (interfaceOrientation == UIInterfaceOrientationLandscapeRight)
     {
+        if (_orientation == UIInterfaceOrientationLandscapeLeft) {
+            _videoView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        }
+        else {
+            _videoView.frame = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
+        }
         _orientation = UIInterfaceOrientationLandscapeRight;
-        _videoView.frame = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
+        
     }
     
     if (_animation != nil)
@@ -640,14 +655,29 @@
     
     _playScrollView.contentSize = CGSizeMake(_playScrollView.frame.size.width *3, _playScrollView.frame.size.height);
     
-    [self setPlayScrollViewFrame];
+    [self setPlayScrollViewFrameWith: UIInterfaceOrientationPortrait];
 }
 
-- (void) setPlayScrollViewFrame
+- (void) setPlayScrollViewFrameWith: (UIInterfaceOrientation)interfaceOrientation
 {
-    _playScrollView.frame = CGRectMake(0, _videoView.frame.origin.y + _videoView.frame.size.height + 40, self.view.frame.size.width, self.view.frame.size.height - 64 - _videoView.frame.size.height - 40);
     
-    _playScrollView.contentOffset = CGPointMake(_playScrollView.frame.size.width * _currentPage, 0);
+    if (interfaceOrientation == UIInterfaceOrientationPortrait) {
+        
+        if (_isFirstCreate == YES) {
+            _isFirstCreate = NO;
+            _playScrollView.frame = CGRectMake(0, _videoView.frame.origin.y + _videoView.frame.size.height + 40, self.view.frame.size.width, self.view.frame.size.height - 64 - _videoView.frame.size.height - 40);
+            
+            _playScrollView.contentOffset = CGPointMake(_playScrollView.frame.size.width * _currentPage, 0);
+        }
+        else {
+            _playScrollView.hidden = NO;
+        }
+    }
+    else {
+        _playScrollView.hidden = YES;
+    }
+    
+    NSLog(@"%@", NSStringFromCGRect(_playScrollView.frame));
 }
 
 #pragma mark---设置三个按钮
@@ -1044,7 +1074,7 @@
         _animation.frame = _videoView.frame;
     }
     
-    [self setPlayScrollViewFrame];
+    [self setPlayScrollViewFrameWith: toInterfaceOrientation];
     
     [self setButtonFrame];
     
